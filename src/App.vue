@@ -15,4 +15,4 @@ export default {
 
 </script>
 
-<style src="assets/sass/app.scss" lang="sass"></style>
+<style src="@/assets/sass/app.scss" lang="sass"></style>
