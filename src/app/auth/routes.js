@@ -1,7 +1,6 @@
 import Main from './components/Main';
 
-export default {};
-export const routes = [
+export default [
   {
     name: 'auth',
     path: '/auth',

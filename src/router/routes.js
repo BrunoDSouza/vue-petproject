@@ -1,5 +1,4 @@
-import { routes as dashboard } from '@/modules/dashboard';
-import { routes as auth } from '@/modules/auth';
+import { routes as app } from '@/app';
 
 const home = [
   { name: 'home',
@@ -8,4 +7,4 @@ const home = [
   },
 ];
 
-export default [...home, ...dashboard, ...auth];
+export default [...home, ...app];
