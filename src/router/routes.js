@@ -1,10 +1,10 @@
-import { routes as app } from '@/app';
+import { routes as app } from '@/app'
 
 const home = [
   { name: 'home',
     path: '/',
-    redirect: '/dashboard',
-  },
-];
+    redirect: '/dashboard'
+  }
+]
 
-export default [...home, ...app];
+export default [...home, ...app]

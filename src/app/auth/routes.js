@@ -1,9 +1,9 @@
-import Main from './components/Main';
+import Main from './components/Main'
 
 export default [
   {
     name: 'auth',
     path: '/auth',
-    component: Main,
-  },
-];
+    component: Main
+  }
+]

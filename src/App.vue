@@ -13,12 +13,12 @@
 
 <script>
 
-import HeaderComponet from '@/components/root/header/main';
+import HeaderComponet from '@/components/root/header/main'
 
 export default {
   name: 'app',
-  components: { HeaderComponet },
-};
+  components: { HeaderComponet }
+}
 
 </script>
 

@@ -1,15 +1,21 @@
 <template>
-    <header class="page-header row">
-      <h2>Olá Dashboard [auth]</h2>
-    </header>
+    <div>
+      <header class="page-header row">
+        <h2>Login</h2>
+      </header>
+      <Login></Login>
+    </div>
+
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
+import Login from './Forms/Login'
 
 export default {
-
-};
+  components: { Login },
+  computed: {
+    ...mapGetters(['isLogged'])
+  }
+}
 </script>
-
-<style lang="css">
-</style>

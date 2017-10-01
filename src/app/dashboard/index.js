@@ -1,2 +1,2 @@
-export default {};
-export { default as routes } from './routes';
+export default {}
+export { default as routes } from './routes'

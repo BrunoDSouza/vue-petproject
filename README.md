@@ -1,6 +1,6 @@
 # vue-petproject
 
-> A Simple application with Vue 2
+> A simple project with Vue 2
 
 ## Build Setup
 

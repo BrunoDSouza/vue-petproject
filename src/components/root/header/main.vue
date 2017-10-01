@@ -1,21 +1,21 @@
 <script>
-  import Left from './left';
-  import Brand from './brand';
+  import Left from './left'
+  import Brand from './brand'
 
   export default {
     name: 'confee-header',
     components: { Left, Brand },
-    data() {
+    data () {
       return {
-        isToggleMenu: false,
-      };
+        isToggleMenu: false
+      }
     },
     methods: {
-      onToggleMenu() {
-        this.isToggleMenu = !this.isToggleMenu;
-      },
-    },
-  };
+      onToggleMenu () {
+        this.isToggleMenu = !this.isToggleMenu
+      }
+    }
+  }
 </script>
 
 <template>

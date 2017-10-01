@@ -1,5 +1,5 @@
-import { defaults } from 'lodash';
-import axios from 'axios';
+import { defaults } from 'lodash'
+import axios from 'axios'
 
-export const createClient = (options = {}) => axios.create(defaults({}, options));
-export default createClient();
+export const createClient = (options = {}) => axios.create(defaults({}, options))
+export default createClient()

@@ -1,4 +1,4 @@
-import { routes as dashboard } from './dashboard';
-import { routes as auth } from './auth';
+import { routes as dashboard } from './dashboard'
+import { routes as auth } from './auth'
 
-export default [...dashboard, ...auth];
+export default [...dashboard, ...auth]

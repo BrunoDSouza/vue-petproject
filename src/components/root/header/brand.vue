@@ -2,11 +2,11 @@
 
 export default {
   methods: {
-    toggle() {
-      this.$emit('toggle');
-    },
-  },
-};
+    toggle () {
+      this.$emit('toggle')
+    }
+  }
+}
 
 </script>
 
