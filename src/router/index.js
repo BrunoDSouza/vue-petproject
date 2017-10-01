@@ -4,4 +4,4 @@ import routes from '@/router/routes';
 
 Vue.use(Router);
 
-export default new Router({ routes });
+export default new Router({ routes, linkActiveClass: 'active' });

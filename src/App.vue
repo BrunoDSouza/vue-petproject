@@ -4,7 +4,7 @@
     <div class="container-fluid">
       <HeaderComponet></HeaderComponet>
       <div class="container">
-        <router-view></router-view>  
+        <router-view></router-view>
       </div>
 
     </div>
@@ -13,7 +13,7 @@
 
 <script>
 
-import HeaderComponet from '@/components/Header';
+import HeaderComponet from '@/components/root/header/main';
 
 export default {
   name: 'app',
