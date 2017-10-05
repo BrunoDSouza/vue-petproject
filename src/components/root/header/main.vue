@@ -1,10 +1,11 @@
 <script>
   import Left from './left'
   import Brand from './brand'
+  import Right from './right'
 
   export default {
     name: 'confee-header',
-    components: { Left, Brand },
+    components: { Left, Brand, Right },
     data () {
       return {
         isToggleMenu: false
@@ -24,6 +25,7 @@
       <Brand @toggle="onToggleMenu"/>
       <div class="collapse navbar-collapse" :class="{ in : isToggleMenu }">
           <Left/>
+          <Right/>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>
