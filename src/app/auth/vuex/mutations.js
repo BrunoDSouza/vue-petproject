@@ -1,9 +1,11 @@
+import * as mutations from './mutations_types'
+
 export default {
-  setUser (state, user) {
+  [mutations.setUser] (state, user) {
     state.user = user
   },
 
-  setToken (state, token) {
+  [mutations.setToken] (state, token) {
     state.token = token
   }
 }

@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import router from '@/router'
-import App from '@/App'
+import App from '@/app/Main'
 import store from '@/vuex'
 
 /* eslint-disable no-new */
