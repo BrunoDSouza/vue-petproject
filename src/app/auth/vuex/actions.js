@@ -8,3 +8,5 @@ export const attemptLogin = (context, payload) => {
             context.commit(mutations.setUser, data)
           })
 }
+
+export const logoutUser = (context) => context.commit(mutations.setLogout)

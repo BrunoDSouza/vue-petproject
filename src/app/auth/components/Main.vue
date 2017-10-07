@@ -5,7 +5,6 @@
       </header>
       <Login></Login>
     </div>
-
 </template>
 
 <script>

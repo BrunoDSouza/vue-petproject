@@ -1,5 +1,5 @@
 <script>
-  import { mapGetters } from 'vuex'
+  import { mapGetters, mapActions } from 'vuex'
 
   export default {
     data () {
@@ -11,8 +11,17 @@
       ...mapGetters(['isLogged', 'currentUser'])
     },
     methods: {
+      ...mapActions(['logoutUser']),
       toggleDropDownMenu () {
         this.isDropDownMenu = !this.isDropDownMenu
+      },
+      doLogoutUser () {
+        this.$loader.show()
+        this.logoutUser()
+        setTimeout(() => {
+          this.$loader.hide()
+          this.$router.push('/auth')
+        }, 1000)
       }
     }
   }
@@ -34,7 +43,7 @@
           <li><a href="javascript:;">Settings</a></li>
           <li><a href="javascript:;">Something here</a></li>
           <li role="separator" class="divider"></li>
-          <li><a href="javascript:;">Logout</a></li>
+          <li><a href="javascript:;" @click="doLogoutUser" >Logout</a></li>
         </ul>
       </li>
   </ul>

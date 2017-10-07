@@ -7,5 +7,10 @@ export default {
 
   [mutations.setToken] (state, token) {
     state.token = token
+  },
+
+  [mutations.setLogout] (state) {
+    state.user = {}
+    state.token = ''
   }
 }
