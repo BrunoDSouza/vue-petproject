@@ -1,12 +1,18 @@
 <template>
     <header class="page-header row">
-      <h2>Olá Dashboard</h2>
+      <h1>Olá Dashboard</h1>
+      <h3>O usuário logado é {{ auth.user.name }}</h3>
+      <h4>Email: {{ auth.user.email }}</h4>
     </header>
 </template>
 
 <script>
+import { mapState } from 'vuex'
 
 export default {
+  computed: {
+    ...mapState(['auth'])
+  }
 }
 </script>
 
