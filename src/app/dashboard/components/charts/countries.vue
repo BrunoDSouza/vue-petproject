@@ -12,7 +12,11 @@ export default {
       const categories = this.getCategories(countries)
       const values = this.getValues(countries)
 
-      this.chart = this.chart === null ? this.setUp({ categories, values }) : this.chart.series[0].setData(values)
+      this.chart === null ? (
+        this.chart = this.setUp({ categories, values })
+      ) : (
+        this.chart.series[0].setData(values)
+      )
     },
     getCountries (list) {
       return _(list).map(item => item.country)

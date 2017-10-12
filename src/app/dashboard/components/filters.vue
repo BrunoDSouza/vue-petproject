@@ -10,7 +10,6 @@ export default {
   methods: {
     ...mapActions(['setFilter']),
     commit () {
-      debugger
       const filter = this.selected
       this.setFilter(filter)
     }

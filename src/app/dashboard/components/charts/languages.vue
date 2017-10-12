@@ -12,12 +12,12 @@ export default {
       const rank = this.setRank(languages, 10)
       const total = this.getTotal(rank)
       const data = this.getPercent(rank, total)
-      debugger
-      // this.chart = this.chart === null ? this.setUp(data) : this.chart.series[0].setData(data)
 
-      if (this.chart === null) this.chart = this.setup(data)
-      else this.chart.series[0].setData(data)
-      debugger
+      this.chart === null ? (
+        this.chart = this.setUp(data)
+      ) : (
+        this.chart.series[0].setData(data)
+      )
     },
     getLanguages (list) {
       return _(list).map(item => item.language)
